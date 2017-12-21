@@ -1,10 +1,8 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
+## Overview
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
 
----
 
 **Finding Lane Lines on the Road**
 
