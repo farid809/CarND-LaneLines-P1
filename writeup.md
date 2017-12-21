@@ -104,7 +104,7 @@ Converting the image to gray scale
 
   This function draws `lines` with `color` and `thickness`. Line coordinate are extrapolated from the inpute lines Lines are drawn on the image inplace (mutates the image).
         
-    def draw_lines_Ex(img, lines, color=[[255, 0, 0], [0, 255, 0]], thickness = 15):
+    def draw_lines_Ex(img, lines, color=[255, 0, 0], thickness = 15):
 
         # 1. separating line segments by their slope ((y2-y1)/(x2-x1)) to decide which
         # segments are part of the left line vs. the right line.
@@ -204,3 +204,8 @@ This pipeline didn't work with the challenge video, possibly because this video 
 2. Tree shadows
 
 <img src="./test_images_output/challenge.gif" width="280" alt="Combined Image" /> 
+
+
+##### References 
+ Average tuple of tuples used in draw_line_Ex : https://stackoverflow.com/questions/12412546/average-tuple-of-tuples
+
