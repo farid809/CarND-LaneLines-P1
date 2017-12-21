@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. The pipeline.
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
 
@@ -29,16 +29,18 @@ If you'd like to include images to show how the pipeline works, here is how to i
 ![alt text][image1]
 
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Potential shortcomings with the current pipeline
+
+  This approach is not resilient enought to handle the following conditions:
+   - Shadows, Weather and Light condition
+   - Curved lanes
+   - Street imperfections (faded lanes)..
 
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
-
-### 3. Suggest possible improvements to your pipeline
+### 3. Possible improvements
 
 A possible improvement would be to ...
 
-Another potential improvement could be to ...
+   - Use different color selection to handle different lighting conditions.
+   - Support other street markings.
+   - Adaptive estimation of street lane based on historical data to compensate for  street imperfection (possibley using Kalman Filter - LQE)
