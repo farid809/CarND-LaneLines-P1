@@ -98,19 +98,13 @@ Converting the image to gray scale
         draw_lines_Ex(line_img, lines)
         return line_img
 
-<img src="./test_images_output/masked_edges.png" width="280" alt="Combined Image" /> 
+
 
 #### Draw Line (Draw_Line and Draw_Line_Ex)
 
+  This function draws `lines` with `color` and `thickness`. Line coordinate are extrapolated from the inpute lines Lines are drawn on the image inplace (mutates the image).
+        
     def draw_lines_Ex(img, lines, color=[[255, 0, 0], [0, 255, 0]], thickness = 15):
-        """
-        This function draws `lines` with `color` and `thickness`. 
-        Line coordinate are extrapolated from the inpute lines
-        Lines are drawn on the image inplace (mutates the image).
-        If you want to make the lines semi-transparent, think about combining
-        this function with the weighted_img() function below
-        """
-
 
         # 1. separating line segments by their slope ((y2-y1)/(x2-x1)) to decide which
         # segments are part of the left line vs. the right line.
@@ -162,14 +156,15 @@ Converting the image to gray scale
     cv2.line(img, (leftLaneX1, leftLaneY1), (leftLaneX2, leftLaneY2), color[0], thickness)
     cv2.line(img, (rightLaneX1, rightLaneY1), (rightLaneX2, rightLaneY2), color[0], thickness)
 
-Todo
+
+___
 
     cv2.addWeighted() to coadd / overlay two images cv2.cvtColor() to grayscale or change color cv2.imwrite() to output images to file
     cv2.bitwise_and() to apply a mask to an image
 
 <img src="./test_images_output/line_edges_debug.png" width="280" alt="Combined Image" /> 
 
-<img src="./test_images_output/line_image.png" width="280" alt="Combined Image" /> 
+
 
 ### 2. Potential shortcomings with the current pipeline
 
@@ -192,12 +187,20 @@ A possible improvement would be to ...
 
 #### Solid White Right
 
+Results for solid white right lane video
+
 <img src="./test_images_output/solidWhiteRight.gif" width="280" alt="Combined Image" /> 
 
 #### Solid Yellow Left
 
+Results for solid yellow left lane video
+
 <img src="./test_images_output/solidYellowLeft.gif" width="280" alt="Combined Image" /> 
 
 #### Challenge
+
+This pipeline didn't work with the challenge video, possibely becuase this video introduced the following:
+1. Curved lanes 
+2. Tree shadows
 
 <img src="./test_images_output/challenge.gif" width="280" alt="Combined Image" /> 
