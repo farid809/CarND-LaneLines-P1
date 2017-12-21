@@ -8,12 +8,12 @@
 
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
+* Enhance the pipleline to average/extrapolate the line segments you detect to map out the full extent of the lane
 
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images/solidWhiteCurve.jpg "Original"
 
 ---
 
