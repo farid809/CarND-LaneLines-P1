@@ -11,10 +11,10 @@ The goals / steps of this project are the following:
 * Enhance the pipleline to average/extrapolate the line segments you detect to map out the full extent of the lane
 
 
-[//]: # (Image References)
+<img src="./test_images/solidWhiteCurve.jpg" width="360" alt="Combined Image" />
+<img src="./examples/line-segments-example.jpg" width="360" alt="Combined Image" />
+<img src="./examples/laneLines_thirdPass.jpg" width="360" alt="Combined Image" />
 
-[image1]: ./test_images/solidWhiteCurve.jpg "Original"
----
 
 ### Reflection
 
