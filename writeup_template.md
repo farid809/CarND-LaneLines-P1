@@ -36,15 +36,27 @@ Converting the image to gray scale
 
 #### Gaussian smoothing 
 
+
+
+
     def gaussian_blur(img, kernel_size):
         """Applies a Gaussian Noise kernel"""
         return cv2.GaussianBlur(img, (kernel_size, kernel_size), 0)
+        
+        
+<img src="./test_images_output/blur_gray.png" width="280" alt="Combined Image" /> 
+
+
 #### Canny Edge Detection 
 
 
     def canny(img, low_threshold, high_threshold):
         """Applies the Canny transform"""
         return cv2.Canny(img, low_threshold, high_threshold)
+        
+<img src="./test_images_output/canny_edges.png" width="280" alt="Combined Image" /> 
+
+
 #### Region of interest selection
 
     def region_of_interest(img, vertices):
@@ -70,6 +82,9 @@ Converting the image to gray scale
         #returning the image only where mask pixels are nonzero
         masked_image = cv2.bitwise_and(img, mask)
         return masked_image
+        
+<img src="./test_images_output/masked_edges.png" width="280" alt="Combined Image" /> 
+
 #### Hough Tranform
 
     def hough_lines(img, rho, theta, threshold, min_line_len, max_line_gap):
@@ -82,6 +97,9 @@ Converting the image to gray scale
         line_img = np.zeros((img.shape[0], img.shape[1], 3), dtype=np.uint8)
         draw_lines_Ex(line_img, lines)
         return line_img
+
+<img src="./test_images_output/masked_edges.png" width="280" alt="Combined Image" /> 
+
 #### Draw Line (Draw_Line and Draw_Line_Ex)
 
     def draw_lines_Ex(img, lines, color=[[255, 0, 0], [0, 255, 0]], thickness = 15):
@@ -149,6 +167,9 @@ Todo
     cv2.addWeighted() to coadd / overlay two images cv2.cvtColor() to grayscale or change color cv2.imwrite() to output images to file
     cv2.bitwise_and() to apply a mask to an image
 
+<img src="./test_images_output/line_edges_debug.png" width="280" alt="Combined Image" /> 
+
+<img src="./test_images_output/line_image.png" width="280" alt="Combined Image" /> 
 
 ### 2. Potential shortcomings with the current pipeline
 
@@ -165,3 +186,18 @@ A possible improvement would be to ...
    - Use of a better color selection approach to handle different lighting conditions.
    - Support other street markings.
    - Adaptive estimation of street lane based on historical data to compensate for  street imperfection (possibley using Kalman Filter - LQE)
+   
+   
+### Results
+
+#### Solid White Right
+
+<img src="./test_images_output/solidWhiteRight.gif" width="280" alt="Combined Image" /> 
+
+#### Solid Yellow Left
+
+<img src="./test_images_output/solidYellowLeft.gif" width="280" alt="Combined Image" /> 
+
+#### Challenge
+
+<img src="./test_images_output/challenge.gif" width="280" alt="Combined Image" /> 
