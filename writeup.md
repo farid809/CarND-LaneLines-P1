@@ -119,7 +119,7 @@ Converting the image to gray scale
                     intercept = y1 - slope * x1
 
                     #Debug: Draw individual lines for troubleshooting purposes
-                    #cv2.line(img, (x1, y1), (x2, y2), color[1], thickness)
+                    #cv2.line(img, (x1, y1), (x2, y2), [0,255,0], thickness)
                     if slope > 0 :
 
                         leftLanes.append((slope, intercept))
