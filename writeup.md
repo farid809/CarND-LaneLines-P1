@@ -214,7 +214,7 @@ This pipeline didn't work with the challenge video, possibly because this video 
 
 
 ##### References 
- - Average tuple of tuples used in draw_line_Ex : https://stackoverflow.com/questions/12412546/average-tuple-of-tuples
+ - Using lambda expr to average tuple of tuples used in draw_line_Ex : https://stackoverflow.com/questions/12412546/average-tuple-of-tuples
  - OpenCV draw text label : https://www.meccanismocomplesso.org/en/english-opencv-python-drawing-shapes-text-on-images/
  - Linear Extrapolation : https://www.ck12.org/algebra/Linear-Interpolation-and-Extrapolation/lesson/Linear-Interpolation-and-Extrapolation-BSC-ALG/
  - Extrapolation of lines : https://medium.com/@esmat.anis/robust-extrapolation-of-lines-in-video-using-linear-hough-transform-edd39d642ddf
