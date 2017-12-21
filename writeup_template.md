@@ -20,16 +20,18 @@ The goals / steps of this project are the following:
 
 ### 1. The pipeline.
 
-My pipeline consisted of 5 steps.
+My pipeline consisted of 7 phases.
 
 #### Color selection
 
-     
+    
 First, I converted the images to grayscale, then I .... 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
+
+<img src="./examples/grayscale.jpg" width="280" alt="Combined Image" /> 
 
 #### Region of interest selection
 #### Grayscaling
