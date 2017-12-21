@@ -104,7 +104,7 @@ Converting the image to gray scale
 
   This function draws `lines` with `color` and `thickness`. Line coordinate are extrapolated from the inpute lines Lines are drawn on the image inplace (mutates the image).
         
-    def draw_lines_Ex(img, lines, color=[[255, 0, 0], [0, 255, 0]], thickness = 15):
+    def draw_lines_Ex(img, lines, color=[255, 0, 0], thickness = 15):
 
         # 1. separating line segments by their slope ((y2-y1)/(x2-x1)) to decide which
         # segments are part of the left line vs. the right line.
@@ -119,7 +119,7 @@ Converting the image to gray scale
                     intercept = y1 - slope * x1
 
                     #Debug: Draw individual lines for troubleshooting purposes
-                    #cv2.line(img, (x1, y1), (x2, y2), color[1], thickness)
+                    #cv2.line(img, (x1, y1), (x2, y2), color, thickness)
                     if slope > 0 :
 
                         leftLanes.append((slope, intercept))
@@ -153,8 +153,8 @@ Converting the image to gray scale
     
     # Draw Left and Right Lane lines
 
-    cv2.line(img, (leftLaneX1, leftLaneY1), (leftLaneX2, leftLaneY2), color[0], thickness)
-    cv2.line(img, (rightLaneX1, rightLaneY1), (rightLaneX2, rightLaneY2), color[0], thickness)
+    cv2.line(img, (leftLaneX1, leftLaneY1), (leftLaneX2, leftLaneY2), color, thickness)
+    cv2.line(img, (rightLaneX1, rightLaneY1), (rightLaneX2, rightLaneY2), color, thickness)
 
 
 ___
@@ -204,3 +204,14 @@ This pipeline didn't work with the challenge video, possibly because this video 
 2. Tree shadows
 
 <img src="./test_images_output/challenge.gif" width="280" alt="Combined Image" /> 
+
+
+
+
+##### References 
+ - Average tuple of tuples used in draw_line_Ex : https://stackoverflow.com/questions/12412546/average-tuple-of-tuples
+ - OpenCV draw text label : https://www.meccanismocomplesso.org/en/english-opencv-python-drawing-shapes-text-on-images/
+ - Linear Extrapolation : https://www.ck12.org/algebra/Linear-Interpolation-and-Extrapolation/lesson/Linear-Interpolation-and-Extrapolation-BSC-ALG/
+ - Extrapolation of lines : https://medium.com/@esmat.anis/robust-extrapolation-of-lines-in-video-using-linear-hough-transform-edd39d642ddf
+ 
+ 
