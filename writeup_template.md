@@ -16,13 +16,13 @@ The goals / steps of this project are the following:
 
 
 
-### Reflection
+## Reflection
 
 ### 1. The pipeline.
 
 My pipeline consisted of 5 steps.
 
-### Color selection
+#### Color selection
 
      
 First, I converted the images to grayscale, then I .... 
@@ -31,12 +31,12 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-### Region of interest selection
-### Grayscaling
-### Gaussian smoothing 
-### Canny Edge Detection 
-### Hough Tranform
-### Draw Line (Draw_Line and Draw_Line_Ex)
+#### Region of interest selection
+#### Grayscaling
+#### Gaussian smoothing 
+#### Canny Edge Detection 
+#### Hough Tranform
+#### Draw Line (Draw_Line and Draw_Line_Ex)
      cv2.addWeighted() to coadd / overlay two images cv2.cvtColor() to grayscale or change color cv2.imwrite() to output images to file
      cv2.bitwise_and() to apply a mask to an image
 
