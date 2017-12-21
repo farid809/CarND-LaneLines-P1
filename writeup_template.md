@@ -199,7 +199,7 @@ Results for solid yellow left lane video
 
 #### Challenge
 
-This pipeline didn't work with the challenge video, possibely becuase this video introduced the following:
+This pipeline didn't work with the challenge video, possibly because this video introduced the following:
 1. Curved lanes 
 2. Tree shadows
 
