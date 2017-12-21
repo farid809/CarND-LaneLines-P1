@@ -24,12 +24,12 @@ My pipeline consisted of 7 phases.
 
 #### Color selection
 
+Converting the image to gray scale
+
+
+    def grayscale(img):
+        return cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
     
-First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
 <img src="./examples/grayscale.jpg" width="280" alt="Combined Image" /> 
 
