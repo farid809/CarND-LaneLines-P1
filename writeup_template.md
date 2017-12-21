@@ -152,16 +152,16 @@ Todo
 
 ### 2. Potential shortcomings with the current pipeline
 
-  This approach is not resilient enought to handle the following conditions:
+  This approach is not resilient to the following conditions:
    - Shadows, Weather and Light condition
    - Curved lanes
-   - Street imperfections (faded lanes)..
+   - Street imperfections (faded lanes, missing lanes)..
 
 
 ### 3. Possible improvements
 
 A possible improvement would be to ...
 
-   - Use different color selection to handle different lighting conditions.
+   - Use of a better color selection approach to handle different lighting conditions.
    - Support other street markings.
    - Adaptive estimation of street lane based on historical data to compensate for  street imperfection (possibley using Kalman Filter - LQE)
